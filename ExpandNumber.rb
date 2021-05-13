@@ -1,3 +1,6 @@
+load 'test.rb'
+Test=FinalCheck.new
+
 def expanded_form number_float
   elemek= number_float.to_s.split("")
   dotishere=elemek.index(".")
@@ -13,7 +16,8 @@ def expanded_form number_float
   return final.join (" + ")
 end
 
-=begin
+
+Test.assert_equals(expanded_form(87.04), '80 + 7 + 4/100')
 Test.assert_equals(expanded_form(87.04), '80 + 7 + 4/100')
 Test.assert_equals(expanded_form(123.025), '100 + 20 + 3 + 2/100 + 5/1000')
 Test.assert_equals(expanded_form(50.270), '50 + 2/10 + 7/100')
@@ -41,4 +45,3 @@ Test.assert_equals(expanded_form(4.28), '4 + 2/10 + 8/100')
 Test.assert_equals(expanded_form(7.304), '7 + 3/10 + 4/1000')
 Test.assert_equals(expanded_form(0.04), '4/100')
 Test.assert_equals(expanded_form(0.1234), '1/10 + 2/100 + 3/1000 + 4/10000')
-=end
