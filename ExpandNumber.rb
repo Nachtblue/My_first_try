@@ -1,5 +1,5 @@
 load 'test.rb'
-Test=FinalCheck.new
+#Test=FinalCheck.new
 
 def expanded_form number_float
   elemek= number_float.to_s.split("")

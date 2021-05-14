@@ -1,5 +1,5 @@
 load 'test.rb'
-Test=FinalCheck.new
+
 require 'matrix'
 
 def rotate_transform matrix, forgatas

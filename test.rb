@@ -6,3 +6,5 @@ class FinalCheck
   end
 
 end
+
+Test=FinalCheck.new
