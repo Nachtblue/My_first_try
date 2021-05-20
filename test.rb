@@ -1,3 +1,4 @@
+
 class FinalCheck
 
   def assert_equals(mit,mivel)
