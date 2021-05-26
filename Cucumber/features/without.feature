@@ -2,12 +2,12 @@ Feature: Can we add 2 numbers?
   This is a small program
 
   Scenario Outline: Lets add 2 numbers
-    Given The original number is <a>
-    When I add 2 to it
-    Then Results should be: <c>
+    Given OMG The original number is <a>
+    When OMG I add <b> to it
+    Then OMG Results should be: <c>
 
     Examples:
-    | a | c |
-    | 5 | "7" |
-    | 3 | "5" |
-    | 2 | "4" |
+    | a | b | c |
+    | 5 | 2 | 7 |
+    | 3 | 2 | 5 |
+    | 2 | 2 | 4 |

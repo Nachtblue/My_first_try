@@ -1,13 +1,17 @@
-Given('The original number is {int}') do |int|
+Given('OMG The original number is {int}') do |int|
   @szam = int
-end
-When('I add 2 to it') do
 
 end
 
-Then('Results should be: {string}') do |string|
-  fuggveny == string.to_i
-  end
+When('OMG I add {int} to it') do |int|
+  @adando = int
+end
+
+Then('OMG Results should be: {int}') do |int|
+  #@szam + @adando == int
+  fuggveny == int
+end
+
 def fuggveny
-  @szam + 2
+  @szam + @adando
 end
