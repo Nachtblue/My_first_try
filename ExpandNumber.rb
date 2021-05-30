@@ -17,6 +17,7 @@ def expanded_form number_float
 end
 
 
+
 Test.assert_equals(expanded_form(87.04), '80 + 7 + 4/100')
 Test.assert_equals(expanded_form(87.04), '80 + 7 + 4/100')
 Test.assert_equals(expanded_form(123.025), '100 + 20 + 3 + 2/100 + 5/1000')
@@ -28,6 +29,7 @@ Test.assert_equals(expanded_form(90.99), '90 + 9/10 + 9/100')
 Test.assert_equals(expanded_form(84.5), '80 + 4 + 5/10')
 Test.assert_equals(expanded_form(76.02), '70 + 6 + 2/100')
 Test.assert_equals(expanded_form(44.5), '40 + 4 + 5/10')
+
 Test.assert_equals(expanded_form(37.49), '30 + 7 + 4/10 + 9/100')
 Test.assert_equals(expanded_form(60.0007), '60 + 7/10000')
 Test.assert_equals(expanded_form(29.22), '20 + 9 + 2/10 + 2/100')
